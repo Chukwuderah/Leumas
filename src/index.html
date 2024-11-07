@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leumas</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+    <div class="ellipse first"></div>
+    <nav class="flex justify-between items-center px-8">
+        <div>
+            <img src="./assets/logo.png" alt="Leumas Logo" class="w-36 h-24 object-contain"/>
+        </div>
+        <!-- <div class="flex flex-nowrap justify-evenly items-center h-full gap-16 text-white"> -->
+        <ul class="flex justify-evenly items-center h-full gap-6 text-white">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <button class="text-white px-5 py-3 rounded-full font-bold text-nowrap flex items-center gap-4" style="background: linear-gradient(180deg, #E2B348 0%, #E8C36C 25%, #FFD873 50%, #FFDA81 75%, #E8C36C 100%);">
+            Get Started
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15.25" cy="15.1655" r="15" fill="white"/>
+            <path d="M20.7674 17.4852L20.5366 10.8774L13.9288 11.1081" stroke="url(#paint0_linear_13_26)" stroke-width="1.54045" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11.6067 20.4536L20.4473 10.9732" stroke="url(#paint1_linear_13_26)" stroke-width="1.54045" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+            <linearGradient id="paint0_linear_13_26" x1="20.5366" y1="10.8774" x2="17.3481" y2="14.2967" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E2B348"/>
+            <stop offset="0.25" stop-color="#E8C36C"/>
+            <stop offset="0.5" stop-color="#FFD873"/>
+            <stop offset="0.75" stop-color="#FFDA81"/>
+            <stop offset="1" stop-color="#E8C36C"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_13_26" x1="20.813" y1="11.3142" x2="11.9723" y2="20.7946" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E2B348"/>
+            <stop offset="0.25" stop-color="#E8C36C"/>
+            <stop offset="0.5" stop-color="#FFD873"/>
+            <stop offset="0.75" stop-color="#FFDA81"/>
+            <stop offset="1" stop-color="#E8C36C"/>
+            </linearGradient>
+            </defs>
+            </svg>
+        </button>
+    <!-- </div> -->
+    </nav>
+    <hr class="bg-[#F7E7CE] mx-auto my-3 w-[95%]">
+    <section id="hero">
+        <div class="p-7 flex justify-between items-center gap-40">
+            <div class="text-white max-w-[50%] flex flex-col items-start gap-8">
+                <h1 class="text-4xl font-bold">Make the most of market moves</h1>
+                <p>access a wide range of investment options, intuitive  trading tools and market insights to help you execute your trading strategies.</p>
+                <button class="text-white px-5 py-3 rounded-full font-bold text-nowrap flex items-center gap-4" style="background: linear-gradient(180deg, #E2B348 0%, #E8C36C 25%, #FFD873 50%, #FFDA81 75%, #E8C36C 100%);">
+                    Join Our Telegram
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="30" height="30" fill="url(#pattern0_53_12)"/>
+                    <defs>
+                    <pattern id="pattern0_53_12" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_53_12" transform="scale(0.0078125)"/>
+                    </pattern>
+                    <image id="image0_53_12" width="128" height="128" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <img src="./assets/Landing_page_chart.png" alt="">
+            </div>
+        </div>
+        <div class="overflow-hidden whitespace-nowrap w-full py-2 my-10">
+            <!-- Marquee container -->
+            <div class="inline-block usdt-scroller">
+                <!-- Duplicate marquee content for seamless effect -->
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT +10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +16.5%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT -10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT +10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +16.5%</span>
+            </div>
+            <!-- Additional marquee rows to create a layered effect -->
+            <div class="inline-block usdt-scroller">
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT +10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +16.5%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT -10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT +10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +16.5%</span>
+            </div>
+            <div class="inline-block usdt-scroller">
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT +10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +16.5%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT -10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT +10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +10%</span>
+                <span class="text-green-600 inline-block px-2 border-r border-gray-200">USDT -10.5%</span>
+                <span class="text-red-500 inline-block px-2 border-r border-gray-200">USDT +16.5%</span>
+            </div>
+        </div>
+</section>
+<section id="why-us" class="h-[100vh] flex justify-center items-center">
+    <div class="flex justify-between items-center gap-20 p-7">
+        <div class="flex flex-col gap-14 mx-10 text-white">
+            <h2 class="font-bold text-4xl">Why Choose Us</h2>
+            <p>Forex beckons, but complexity holds you back. We get it. At <span class="text-[#E8C36C] font-bold">Leumas</span>, we're more than a platform - we're your trading partner. <br>
+                Trade with peace of mind: secure platform, protected funds, competitive spreads. Learn and grow: extensive resources for all levels. Need help? Our 24/7 support is here. <br>
+                Ready to thrive? Open an account and join us. We'll guide you to trading mastery.</p>
+        </div>
+        <!-- Image Section -->
+        <div class="relative mx-10 flex-shrink-0 w-[40%] h-[100%]">
+            <!-- Border Wrapper -->
+            <div class="absolute inset-0 rounded-t-[6rem] border-4 border-[#E8C36C] p-1"></div>
+
+            <!-- Image -->
+            <img src="./assets/forex-chartx.jpeg" alt="Trading Platform" class="rounded-t-[6rem] object-cover h-full w-full">
+        </div>
+    </div>
+</section>
+<section id="about-us">
+    <h2 class="font-bold text-3xl">About Us</h2>
+    <div class="flex justify-center items-end p-10">
+        <div class="bg-gray-700 rounded border-2 border-[#E8C36C]"></div>
+    </div>
+</section>
+<script src="./landing-page.js"></script>
+</body>
+</html>

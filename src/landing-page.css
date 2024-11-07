@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ellipse.first {
+position: absolute;
+width: 400px;
+height: 400px;
+left: -140px;
+top: 45px;
+
+background: rgba(192, 172, 122, 0.3);
+filter: blur(200px);
+}
+
+.usdt-scroller {
+    animation: scroll 20s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
