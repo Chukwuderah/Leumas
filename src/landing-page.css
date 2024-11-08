@@ -2,15 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.ellipse.first {
+.ellipse {
 position: absolute;
 width: 400px;
 height: 400px;
-left: -140px;
-top: 45px;
-
 background: rgba(192, 172, 122, 0.3);
 filter: blur(200px);
+z-index: -9999;
+}
+
+.first {
+    left: -140px;
+    top: 45px;
+}
+
+.second {
+    left: 70%;
+    top: 2000px;
 }
 
 .usdt-scroller {
