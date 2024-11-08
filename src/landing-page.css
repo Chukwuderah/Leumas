@@ -41,3 +41,12 @@ z-index: -9999;
         transform: translateX(-100%);
     }
 }
+
+.dots-container .dot {
+    transition: background-color 0.3s ease;
+}
+
+.dots-container .dot.active {
+    background-color: #E8C36C; /* Active color for the dot */
+    width: 1.5rem;
+}
