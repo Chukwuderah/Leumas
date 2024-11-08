@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box;
+}
+
+#reviews-carousel .flex.flex-shrink-0 {
+    transition: transform 0.5s ease;
+}
+
 .ellipse {
 position: absolute;
 width: 400px;
