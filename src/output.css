@@ -839,6 +839,18 @@ video {
   width: 91.666667%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[92\] {
+  width: 92;
+}
+
+.w-\[92\%\] {
+  width: 92%;
+}
+
 .max-w-\[50\%\] {
   max-width: 50%;
 }
@@ -1100,6 +1112,18 @@ video {
 .bg-neutral-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[neutral-900\] {
+  background-color: neutral-900;
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
 }
 
 .object-contain {
