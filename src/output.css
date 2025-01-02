@@ -747,6 +747,18 @@ video {
   height: 8rem;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[765\] {
+  height: 765;
+}
+
+.h-\[765px\] {
+  height: 765px;
+}
+
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
@@ -810,6 +822,10 @@ video {
 
 .w-\[\] {
   width: ;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .max-w-\[50\%\] {
