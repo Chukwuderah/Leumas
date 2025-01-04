@@ -1359,3 +1359,25 @@ video {
   --tw-text-opacity: 1;
   color: rgb(232 195 108 / var(--tw-text-opacity, 1));
 }
+
+.active\:text-\[\]:active {
+  color: ;
+}
+
+.active\:text-\[\#\]:active {
+  color: #;
+}
+
+.active\:text-\[\#e\]:active {
+  color: #e;
+}
+
+.active\:text-\[\#e8c\]:active {
+  --tw-text-opacity: 1;
+  color: rgb(238 136 204 / var(--tw-text-opacity, 1));
+}
+
+.active\:text-\[\#e8c3c6\]:active {
+  --tw-text-opacity: 1;
+  color: rgb(232 195 198 / var(--tw-text-opacity, 1));
+}
