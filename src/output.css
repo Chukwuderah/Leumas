@@ -688,6 +688,16 @@ video {
   margin-bottom: 8%;
 }
 
+.my-\[5\%\] {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.my-\[7\%\] {
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
