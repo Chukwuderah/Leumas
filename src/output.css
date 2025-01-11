@@ -1001,6 +1001,14 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-\[10\] {
+  border-radius: 10;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
 .rounded-t-\[6rem\] {
   border-top-left-radius: 6rem;
   border-top-right-radius: 6rem;
