@@ -969,6 +969,10 @@ video {
   gap: 150px;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1229,6 +1233,11 @@ video {
   padding-bottom: 30px;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1285,6 +1294,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[15px\] {
+  font-size: 15px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1307,6 +1320,14 @@ video {
 
 .leading-\[48px\] {
   line-height: 48px;
+}
+
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-\[18px\] {
+  line-height: 18px;
 }
 
 .text-\[\#E8C36C\] {
@@ -1332,6 +1353,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#E2B348\] {
+  --tw-text-opacity: 1;
+  color: rgb(226 179 72 / var(--tw-text-opacity, 1));
 }
 
 .brightness-100 {
