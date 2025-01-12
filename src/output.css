@@ -722,6 +722,18 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[30\] {
+  margin-bottom: 30;
+}
+
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1219,6 +1231,22 @@ video {
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pb-\[30px\] {
+  padding-bottom: 30px;
+}
+
+.pb-\[300px\] {
+  padding-bottom: 300px;
+}
+
+.pb-\[0px\] {
+  padding-bottom: 0px;
+}
+
+.pb-\[10px\] {
+  padding-bottom: 10px;
 }
 
 .text-left {
