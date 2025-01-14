@@ -1335,6 +1335,10 @@ video {
   line-height: 48px;
 }
 
+.leading-\[\] {
+  line-height: ;
+}
+
 .text-\[\#E2B348\] {
   --tw-text-opacity: 1;
   color: rgb(226 179 72 / var(--tw-text-opacity, 1));
@@ -1363,6 +1367,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .brightness-100 {
