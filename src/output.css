@@ -1018,6 +1018,14 @@ video {
   border-radius: 9999px;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
 .rounded-t-\[6rem\] {
   border-top-left-radius: 6rem;
   border-top-right-radius: 6rem;
@@ -1105,6 +1113,11 @@ video {
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[black\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-r {
@@ -1256,6 +1269,21 @@ video {
 .py-\[30px\] {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.px-\[52px\] {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pb-10 {
