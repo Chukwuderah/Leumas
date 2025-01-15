@@ -767,16 +767,16 @@ video {
   height: 100vh;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
 
 .h-\[38px\] {
   height: 38px;
-}
-
-.h-\[50px\] {
-  height: 50px;
 }
 
 .h-full {
@@ -787,12 +787,8 @@ video {
   height: 100vh;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[30px\] {
-  height: 30px;
+.h-\[20px\] {
+  height: 20px;
 }
 
 .min-h-\[70vh\] {
@@ -859,11 +855,6 @@ video {
   width: 95%;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .w-full {
   width: 100%;
 }
@@ -875,6 +866,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[2\] {
+  width: 2;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .min-w-full {
@@ -1015,6 +1014,22 @@ video {
   gap: 25px;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1057,14 +1072,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-\[\] {
-  border-radius: ;
-}
-
 .rounded-t-\[6rem\] {
   border-top-left-radius: 6rem;
   border-top-right-radius: 6rem;
@@ -1080,6 +1087,10 @@ video {
 
 .border-4 {
   border-width: 4px;
+}
+
+.border-\[0\] {
+  border-width: 0;
 }
 
 .border-\[1px\] {
@@ -1119,6 +1130,10 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
+.border-\[\] {
+  border-color: ;
+}
+
 .bg-\[\#090909\] {
   --tw-bg-opacity: 1;
   background-color: rgb(9 9 9 / var(--tw-bg-opacity, 1));
@@ -1137,6 +1152,11 @@ video {
 .bg-\[\#222222\] {
   --tw-bg-opacity: 1;
   background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#E2B348\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 179 72 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#E8C36C\] {
@@ -1161,28 +1181,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#E2B348\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 179 72 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#E2B34\] {
-  background-color: #E2B34;
-}
-
-.bg-\[\#\] {
-  background-color: #;
 }
 
 .bg-gradient-to-r {
@@ -1346,9 +1344,9 @@ video {
   padding-bottom: 30px;
 }
 
-.py-\[50px\] {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-10 {
