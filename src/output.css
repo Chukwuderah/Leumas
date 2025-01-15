@@ -791,6 +791,10 @@ video {
   height: 20px;
 }
 
+.h-\[\] {
+  height: ;
+}
+
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
@@ -1367,6 +1371,10 @@ video {
 
 .pb-\[30px\] {
   padding-bottom: 30px;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-left {
