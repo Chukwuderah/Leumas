@@ -8,16 +8,21 @@
   </head>
   <body class="bg-black text-white w-full flex-col items-center justify-center">
     <div class="ellipse first"></div>
-    <nav class="flex flex-col md:flex-row justify-between items-center px-8">
-      <div>
-        <img
-          src="./assets/logo.png"
-          alt="Leumas Logo"
-          class="w-36 h-24 object-contain"
-          id="top"
-        />
+    <nav class="bg-[#202020] flex flex-col md:flex-row justify-between items-center px-8">
+      <div class="flex justify-between items-center w-full">
+        <div>
+          <img
+            src="./assets/logo.png"
+            alt="Leumas Logo"
+            class="w-36 h-24 object-contain"
+            id="top"
+          />
+        </div>
+        <button type="button">
+          <img src="./assets/hamburger.png" alt="hamburger menu" class="w-6 h-5">
+        </button>
       </div>
-      <!-- <div class="flex flex-nowrap justify-evenly items-center h-full gap-16 text-white"> -->
+      <div class="flex flex-col md:flex-row flex-nowrap justify-evenly items-center h-full gap-16 text-white">
       <ul class="flex flex-col md:flex-row justify-evenly items-center h-full gap-6 text-white">
         <li><a href="./index.html" class="hover:text-[#e8c36c] active:text-[#e8c3c6]">Home</a></li>
         <li><a href="./services.html"class="hover:text-[#e8c36c] active:text-[#e8c3c6]">Our Services</a></li>
@@ -94,7 +99,7 @@
           </defs>
         </svg>
       </button>
-      <!-- </div> -->
+      </div>
     </nav>
 
     <section class="flex justify-center w-[90%] mx-auto my-[5%] border-[1px] rounded-[10px] bg-gradient-to-br from-[#C9FF94] via-[#8CFFC8] to-[#DE98FF]">
