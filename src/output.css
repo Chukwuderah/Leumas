@@ -759,6 +759,14 @@ video {
   margin-top: 60px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1672,6 +1680,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
   .md\:p-\[120px\] {
     padding: 120px;
   }
