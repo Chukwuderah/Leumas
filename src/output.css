@@ -683,16 +683,6 @@ video {
   margin-bottom: 60px;
 }
 
-.my-\[a\] {
-  margin-top: a;
-  margin-bottom: a;
-}
-
-.my-\[auto\] {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1030,10 +1020,6 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.self-center {
-  align-self: center;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1249,20 +1235,12 @@ video {
   padding: 2rem;
 }
 
-.p-\[50px\] {
-  padding: 50px;
-}
-
-.p-\[100px\] {
-  padding: 100px;
-}
-
-.p-\[150px\] {
-  padding: 150px;
-}
-
 .p-\[120px\] {
   padding: 120px;
+}
+
+.p-\[50px\] {
+  padding: 50px;
 }
 
 .px-10 {
@@ -1350,31 +1328,6 @@ video {
   padding-bottom: 30px;
 }
 
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.py-\[50\] {
-  padding-top: 50;
-  padding-bottom: 50;
-}
-
-.py-\[50\%\] {
-  padding-top: 50%;
-  padding-bottom: 50%;
-}
-
-.py-\[a\] {
-  padding-top: a;
-  padding-bottom: a;
-}
-
-.py-\[auto\] {
-  padding-top: auto;
-  padding-bottom: auto;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1397,34 +1350,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
-}
-
-.pt-\[\] {
-  padding-top: ;
-}
-
-.pt-\[50\%\] {
-  padding-top: 50%;
-}
-
-.pt-\[50px\] {
-  padding-top: 50px;
-}
-
-.pt-\[500px\] {
-  padding-top: 500px;
 }
 
 .text-left {
@@ -1457,6 +1382,10 @@ video {
   font-size: 15px;
 }
 
+.text-\[2\.9rem\] {
+  font-size: 2.9rem;
+}
+
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -1481,34 +1410,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[45px\] {
-  font-size: 45px;
-}
-
-.text-\[5rem\] {
-  font-size: 5rem;
-}
-
-.text-\[3rem\] {
-  font-size: 3rem;
-}
-
-.text-\[2rem\] {
-  font-size: 2rem;
-}
-
-.text-\[4rem\] {
-  font-size: 4rem;
-}
-
-.text-\[2\.8rem\] {
-  font-size: 2.8rem;
-}
-
-.text-\[2\.9rem\] {
-  font-size: 2.9rem;
 }
 
 .font-bold {
@@ -1580,14 +1481,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[45\] {
-  color: 45;
 }
 
 .outline-\[0\] {
