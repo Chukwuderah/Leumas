@@ -1491,6 +1491,10 @@ video {
   padding-top: 1rem;
 }
 
+.pb-\[20px\] {
+  padding-bottom: 20px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1823,5 +1827,15 @@ video {
 
   .md\:text-\[\] {
     color: ;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
