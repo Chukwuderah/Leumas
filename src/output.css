@@ -1069,6 +1069,14 @@ video {
   gap: 25px;
 }
 
+.gap-\[50px\] {
+  gap: 50px;
+}
+
+.gap-\[70px\] {
+  gap: 70px;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1749,6 +1757,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-\[150px\] {
+    gap: 150px;
   }
 
   .md\:p-\[120px\] {
