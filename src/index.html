@@ -6,7 +6,7 @@
     <title>Leumas</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black text-white w-full">
+  <body class="bg-black text-white w-full max-w-full">
     <div class="ellipse first"></div>
     <nav class="flex justify-between items-center px-8">
       <div>
@@ -98,9 +98,9 @@
     </nav>
     <hr class="bg-[#F7E7CE] mx-auto my-3 w-[95%]" />
     <section id="hero">
-      <div class="px-9 flex justify-between items-center gap-40">
-        <div class="text-white max-w-[50%] flex flex-col items-start gap-8">
-          <h1 class="text-4xl font-bold">Make the most of market moves</h1>
+      <div class="px-9 w-full h-full justify-center relative">
+        <div class="text-white max-w-full flex flex-col items-center gap-8 z-10">
+          <h1 class="text-[2rem] font-bold">Make the most of market moves</h1>
           <p>
             access a wide range of investment options, intuitive trading tools
             and market insights to help you execute your trading strategies.
@@ -150,8 +150,8 @@
             </svg>
           </button>
         </div>
-        <div>
-          <img src="./assets/Landing_page_chart.png" alt="" />
+        <div class="w-full">
+          <img src="./assets/Landing_page_chart.png" alt="chart" class="z-[-1000] absolute top-[-45px]"/>
         </div>
       </div>
       <div class="overflow-hidden whitespace-nowrap w-full py-2 my-10">
