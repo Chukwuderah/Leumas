@@ -1435,6 +1435,16 @@ video {
   padding-right: 20px;
 }
 
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-\[12px\] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1743,6 +1753,16 @@ video {
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .md\:px-\[50px\] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .md\:py-\[23px\] {
+    padding-top: 23px;
+    padding-bottom: 23px;
   }
 
   .md\:text-right {
