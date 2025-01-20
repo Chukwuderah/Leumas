@@ -1693,6 +1693,18 @@ video {
     margin-bottom: 8rem;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:max-w-\[50\%\] {
+    max-width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:p-\[120px\] {
     padding: 120px;
   }
