@@ -695,6 +695,16 @@ video {
   margin-bottom: 60px;
 }
 
+.my-\[15\%\] {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.my-\[2\%\] {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -741,6 +751,14 @@ video {
 
 .mt-\[60px\] {
   margin-top: 60px;
+}
+
+.mb-\[1px\] {
+  margin-bottom: 1px;
+}
+
+.mb-\[20px\] {
+  margin-bottom: 20px;
 }
 
 .inline-block {
