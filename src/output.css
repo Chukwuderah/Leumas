@@ -819,6 +819,11 @@ video {
   height: 100vh;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
