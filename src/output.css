@@ -592,6 +592,10 @@ video {
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -624,12 +628,20 @@ video {
   top: -45px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-\[-1000\] {
   z-index: -1000;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-5 {
@@ -1183,6 +1195,11 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gradient-to-br {

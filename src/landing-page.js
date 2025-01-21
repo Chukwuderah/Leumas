@@ -1,12 +1,14 @@
+const navbar = document.querySelector("nav");
 const hamburger = document.getElementById("hamburger");
 const hamburgerIcon = document.getElementById("hamburger-icon");
 const menu = document.querySelector("#menu");
-const menu2 = document.querySelector("#menu2");
+const btnMenu = document.querySelector("#btnMenu");
 
 hamburger.addEventListener("click", () => {
   if (window.innerWidth < 768) {
     menu.classList.toggle("hidden");
-    menu2.classList.toggle("hidden");
+    btnMenu.classList.toggle("hidden");
+    navbar.classList.toggle("bg-[#202020]");
 
     // Toggle between hamburger and closing icon
     const isOpen = hamburger.getAttribute("data-state") === "open";
@@ -22,7 +24,7 @@ hamburger.addEventListener("click", () => {
 const handleResize = () => {
   if (window.innerWidth >= 768) {
     menu.classList.remove("hidden");
-    menu2.classList.remove("hidden");
+    btnMenu.classList.remove("hidden");
 
     // Reset the hamburger icon to its default state
     hamburger.setAttribute("data-state", "closed");
@@ -36,6 +38,20 @@ window.addEventListener("resize", handleResize);
 
 // Initial check in case the page loads in a wide screen
 handleResize();
+
+// Add scroll effect to make navbar fixed after scrolling 100px
+const handleScroll = () => {
+    if (window.scrollY > 100) {
+      navbar.classList.add("fixed", "top-0", "left-0", "w-full", "z-50", "bg-[#202020]");
+      navbar.classList.remove("relative");
+    } else {
+      navbar.classList.remove("fixed", "top-0", "left-0", "w-full", "z-50", "bg-[#202020]");
+      navbar.classList.add("relative");
+    }
+  };
+  
+  // Add a scroll event listener
+  window.addEventListener("scroll", handleScroll);
 
 document.addEventListener("DOMContentLoaded", () => {
   // Adjust animation duration for the USDT container
