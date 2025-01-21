@@ -8,7 +8,9 @@
   </head>
   <body class="bg-black text-white w-full flex-col items-center justify-center">
     <div class="ellipse first"></div>
-    <nav class="bg-[#202020] flex flex-col md:flex-row justify-between items-center px-8 w-full">
+    <nav
+      class="bg-[#202020] flex flex-col md:flex-row justify-between items-center px-8 w-full"
+    >
       <div class="flex justify-between items-center max-md:w-full">
         <div>
           <img
@@ -18,15 +20,52 @@
             id="top"
           />
         </div>
-        <button type="button" id="hamburger" data-state="closed" class="md:hidden transition-transform duration-300">
-          <img src="./assets/hamburger.png" alt="hamburger menu" class="w-6 h-5" id="hamburger-icon">
-        </button>        
+        <button
+          type="button"
+          id="hamburger"
+          data-state="closed"
+          class="md:hidden transition-transform duration-300"
+        >
+          <img
+            src="./assets/hamburger.png"
+            alt="hamburger menu"
+            class="w-6 h-5"
+            id="hamburger-icon"
+          />
+        </button>
       </div>
-      <ul id="menu" class="flex flex-col md:flex-row justify-evenly items-center h-full gap-6 text-white max-md:pb-6">
-        <li><a href="./index.html" class="hover:text-[#e8c36c] active:text-[#e8c3c6]">Home</a></li>
-        <li><a href="./services.html"class="hover:text-[#e8c36c] active:text-[#e8c3c6]">Our Services</a></li>
-        <li><a href="./about.html" class="hover:text-[#e8c36c] active:text-[#e8c3c6]">About</a></li>
-        <li><a href="./contact-us.html" class="hover:text-[#e8c36c] active:text-[#e8c3c6]">Contact Us</a></li>
+      <ul
+        id="menu"
+        class="flex flex-col md:flex-row justify-evenly items-center h-full gap-6 text-white max-md:pb-6"
+      >
+        <li>
+          <a
+            href="./index.html"
+            class="hover:text-[#e8c36c] active:text-[#e8c3c6]"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="./services.html"
+            class="hover:text-[#e8c36c] active:text-[#e8c3c6]"
+            >Our Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="./about.html"
+            class="hover:text-[#e8c36c] active:text-[#e8c3c6]"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="./contact-us.html"
+            class="hover:text-[#e8c36c] active:text-[#e8c3c6]"
+            >Contact Us</a
+          >
+        </li>
       </ul>
       <button
         class="text-white px-3 py-3 max-md:mb-6 rounded-full font-bold text-nowrap flex items-center gap-4"
@@ -101,78 +140,169 @@
       </button>
     </nav>
 
-    <section class="flex justify-center w-[90%] mx-auto my-[5%] border-[1px] rounded-[10px] bg-gradient-to-br from-[#C9FF94] via-[#8CFFC8] to-[#DE98FF]">
-      <div class="w-[100%] bg-[#202020] m-[1px] px-[20px] py-[30px] md:p-[50px] rounded-[10px] flex flex-col md:flex-row justify-center gap-[70px] md:gap-[150px]">
+    <section
+      class="flex justify-center w-[90%] mx-auto my-[5%] border-[1px] rounded-[10px] bg-gradient-to-br from-[#C9FF94] via-[#8CFFC8] to-[#DE98FF]"
+    >
+      <div
+        class="w-[100%] bg-[#202020] m-[1px] px-[20px] py-[30px] md:p-[50px] rounded-[10px] flex flex-col md:flex-row justify-center gap-[70px] md:gap-[150px]"
+      >
         <div class="w-full md:w-[50%] md:max-w-[50%]">
-          <h1 class="text-[37px] md:text-[40px] font-medium leading-[48px] pb-4">Contact Us</h1>
-          <p class="text-[20px] font-normal leading-[24px]">You Can Now Call, Send Us A Mail Or Fill Out Our Contact Form</p>
+          <h1
+            class="text-[37px] md:text-[40px] font-medium leading-[48px] pb-4"
+          >
+            Contact Us
+          </h1>
+          <p class="text-[20px] font-normal leading-[24px]">
+            You Can Now Call, Send Us A Mail Or Fill Out Our Contact Form
+          </p>
           <div class="my-[60px]">
             <div class="flex gap-5 pb-5">
-              <img src="./assets/ic_round-email.png" alt="email">
-              <span class="text-[15px] text-[#E2B348] font-medium leading-[18px]">info@leumas.com.ng</span>
+              <img src="./assets/ic_round-email.png" alt="email" />
+              <span
+                class="text-[15px] text-[#E2B348] font-medium leading-[18px]"
+                >info@leumas.com.ng</span
+              >
             </div>
             <div class="flex gap-5">
-              <img src="./assets/fluent_call-24-filled.png" alt="phone">
-              <span class="text-[15px] text-[#E2B348] font-medium leading-[18px]">+234 905 2667 815</span>
+              <img src="./assets/fluent_call-24-filled.png" alt="phone" />
+              <span
+                class="text-[15px] text-[#E2B348] font-medium leading-[18px]"
+                >+234 905 2667 815</span
+              >
             </div>
           </div>
           <ul class="list-disc leading-[24px]">
-            <li><b>Customer Support:</b> Our Support Team Is Available Around The Clock To Attend To Any And Every Issue You Have.</li><br>
-            <li><b>Feedback & Suggestions:</b> We Value Feedback And Suggestions As This Help Us Make Leumas Better And Promote Your Experience With Us.</li><br>
-            <li><b>Trading Inquiries:</b> Any Questions You Have About Trading Would Be Answered In The Best Way Possible For You Right Here At Leumas.</li>
+            <li>
+              <b>Customer Support:</b> Our Support Team Is Available Around The
+              Clock To Attend To Any And Every Issue You Have.
+            </li>
+            <br />
+            <li>
+              <b>Feedback & Suggestions:</b> We Value Feedback And Suggestions
+              As This Help Us Make Leumas Better And Promote Your Experience
+              With Us.
+            </li>
+            <br />
+            <li>
+              <b>Trading Inquiries:</b> Any Questions You Have About Trading
+              Would Be Answered In The Best Way Possible For You Right Here At
+              Leumas.
+            </li>
           </ul>
         </div>
-        <div class="w-full md:w-[50%] md:max-w-[50%] bg-[#090909] rounded-[20px] p-[15px] md:px-[50px] md:py-[23px] flex flex-col">
-          <h1 class="text-[30px] font-normal leading-[36px] pb-[15px]">Get In Touch With Us</h1>
-          <p class="text-[15px] text-[#AAAAAA] font-medium leading-[18px]">Kindly Fill The Form For Inquiries Or complaints Or Other Issues</p>
-          <form action="" method="post" class="w-full max-w-full mt-[60px] text-black">
-            <div for="name" class="flex flex-col lg:flex-row justify-between gap-[25px] mb-[30px] w-full max-w-full">
+        <div
+          class="w-full md:w-[50%] md:max-w-[50%] bg-[#090909] rounded-[20px] p-[15px] md:px-[50px] md:py-[23px] flex flex-col"
+        >
+          <h1 class="text-[30px] font-normal leading-[36px] pb-[15px]">
+            Get In Touch With Us
+          </h1>
+          <p class="text-[15px] text-[#AAAAAA] font-medium leading-[18px]">
+            Kindly Fill The Form For Inquiries Or complaints Or Other Issues
+          </p>
+          <form
+            action=""
+            method="post"
+            class="w-full max-w-full mt-[60px] text-black"
+          >
+            <div
+              for="name"
+              class="flex flex-col lg:flex-row justify-between gap-[25px] mb-[30px] w-full max-w-full"
+            >
               <label for="fName" class="w-full">
-                <input type="text" placeholder="First Name" id="fName" class="w-full rounded-[30px] h-[38px] px-4 bg-transparent outline-[0] border border-[#808080] text-white text-[.9rem] font-light">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  id="fName"
+                  class="w-full rounded-[30px] h-[38px] px-4 bg-transparent outline-[0] border border-[#808080] text-white text-[.9rem] font-light"
+                />
               </label>
               <label for="lName" class="w-full">
-                <input type="text" placeholder="Last Name" id="lName" class="w-full rounded-[30px] h-[38px] px-4 bg-transparent outline-[0] border border-[#808080] text-white text-[.9rem] font-light">
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  id="lName"
+                  class="w-full rounded-[30px] h-[38px] px-4 bg-transparent outline-[0] border border-[#808080] text-white text-[.9rem] font-light"
+                />
               </label>
             </div>
-            <label for="email" class="flex flex-row items-center gap-[10px] w-full border border-[#808080] h-[38px] px-4 mb-6 rounded-[30px]">
-              <img src="./assets/form_round-email.png" alt="form_round-email" class="w-[20px] h-[20px]">
-              <input type="email" placeholder="Email Address" id="email" autocomplete="email" class="w-full bg-transparent outline-[0] border-[0] border-[#808080] text-white text-[.9rem] font-light">
+            <label
+              for="email"
+              class="flex flex-row items-center gap-[10px] w-full border border-[#808080] h-[38px] px-4 mb-6 rounded-[30px]"
+            >
+              <img
+                src="./assets/form_round-email.png"
+                alt="form_round-email"
+                class="w-[20px] h-[20px]"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="email"
+                autocomplete="email"
+                class="w-full bg-transparent outline-[0] border-[0] border-[#808080] text-white text-[.9rem] font-light"
+              />
             </label>
             <label for="text">
               <!-- <input type="text" placeholder="How Can We Help You?" class="min-w-full rounded-[30px] h-[200px] px-4 mb-6 bg-transparent outline-[0] border border-[#808080] text-white text-[.9rem] font-light"> -->
-               <textarea name="text" id="text" placeholder="How Can We Help You?" class="min-w-full rounded-[30px] h-[200px] px-4 pt-4 mb-6 bg-transparent outline-[0] border border-[#808080] text-white text-[.9rem] font-light"></textarea>
+              <textarea
+                name="text"
+                id="text"
+                placeholder="How Can We Help You?"
+                class="min-w-full rounded-[30px] h-[200px] px-4 pt-4 mb-6 bg-transparent outline-[0] border border-[#808080] text-white text-[.9rem] font-light"
+              ></textarea>
             </label>
-            <button type="submit" class="bg-[#E2B348] text-white min-w-full rounded-[30px] h-[38px]">Submit</button>
+            <button
+              type="submit"
+              class="bg-[#E2B348] text-white min-w-full rounded-[30px] h-[38px]"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </div>
     </section>
     <!-- <div class="mx-auto my-[23%] w-[80%]"></div> -->
     <footer class="w-full bg-[#202020]">
-        <div class="w-full px-4 md:px-14 flex-col justify-center items-center gap-10 pb-[30px]">
-            <div class="flex items-center justify-center flex-col gap-6 py-[30px]">
-                <a href="#top">
-                    <img src="./assets/logo.png" alt="logo">
-                </a>
-                <div class="flex gap-8 mb-5">
-                    <a href="#">
-                        <img src="./assets/facebook.png" alt="facebook">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/ri_instagram-fill.png" alt="Instagram">
-                    </a>
-                    <a href="#">
-                        <img src="./assets/uil_twitter.png" alt="twitter">
-                    </a>
-                </div>
-            </div>
-            <div>
-                <p class="text-right text-sm">Copyright © 2024 All Rights Reserved</p>
-                <img src="./assets/Group 61.png" alt="horizontal line" class="w-full">
-                <p class="text-sm">Thanks for the visit <span class="text-[#E8C36C] font-bold">&hearts; Leumas</span></p>
-            </div>
+      <div
+        class="w-full px-4 md:px-14 flex-col justify-center items-center gap-10 pb-[30px]"
+      >
+        <div class="flex items-center justify-center flex-col gap-6 py-[30px]">
+          <a href="#top">
+            <img src="./assets/logo.png" alt="logo" />
+          </a>
+          <div class="flex gap-8 mb-5">
+            <a href="#">
+              <img src="./assets/facebook.png" alt="facebook" />
+            </a>
+            <a href="#">
+              <img src="./assets/ri_instagram-fill.png" alt="Instagram" />
+            </a>
+            <a href="#">
+              <img src="./assets/uil_twitter.png" alt="twitter" />
+            </a>
+          </div>
         </div>
+        <div>
+          <p class="text-right max-sm:text-center text-[1rem] max-md:hidden">
+            Copyright © 2024 All Rights Reserved
+          </p>
+          <img
+            src="./assets/Group 61.png"
+            alt="horizontal line"
+            class="w-full max-sm:h-5 my-2"
+          />
+          <div class="flex justify-between">
+            <p class="text-right max-sm:text-center text-[1rem] md:hidden">
+              Copyright © 2024 All Rights Reserved
+            </p>
+            <p class="text-[1rem] max-sm:text-center">
+              Thanks for the visit
+              <span class="text-[#E8C36C] font-bold">&hearts; Leumas</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="./landing-page.js"></script>
-</body>
+  </body>
 </html>
