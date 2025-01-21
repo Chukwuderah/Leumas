@@ -1630,6 +1630,10 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
