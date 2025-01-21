@@ -11,7 +11,7 @@ hamburger.addEventListener("click", () => {
     // Toggle between hamburger and closing icon
     const isOpen = hamburger.getAttribute("data-state") === "open";
     hamburger.setAttribute("data-state", isOpen ? "closed" : "open");
-    hamburgerIcon.src = isOpen ? "./assets/hamburger.png" : "./assets/closing-icon.png";
+    hamburgerIcon.src = isOpen ? "./assets/closing-icon.png" : "./assets/hamburger.png";
 
     // Add a rotation animation
     hamburger.classList.toggle("rotate-180");
