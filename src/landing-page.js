@@ -1,20 +1,33 @@
 const hamburger = document.getElementById("hamburger");
+const hamburgerIcon = document.getElementById("hamburger-icon");
 const menu = document.querySelector("#menu");
 const menu2 = document.querySelector("#menu2");
 
-// Toggle menu visibility for mobile view
 hamburger.addEventListener("click", () => {
   if (window.innerWidth < 768) {
     menu.classList.toggle("hidden");
     menu2.classList.toggle("hidden");
+
+    // Toggle between hamburger and closing icon
+    const isOpen = hamburger.getAttribute("data-state") === "open";
+    hamburger.setAttribute("data-state", isOpen ? "closed" : "open");
+    hamburgerIcon.src = isOpen ? "./assets/hamburger.png" : "./assets/closing-icon.png";
+
+    // Add a rotation animation
+    hamburger.classList.toggle("rotate-180");
   }
 });
 
 // Ensure the menu is visible for larger screens
 const handleResize = () => {
-  if (window.innerWidth >= 640) {
+  if (window.innerWidth >= 768) {
     menu.classList.remove("hidden");
     menu2.classList.remove("hidden");
+
+    // Reset the hamburger icon to its default state
+    hamburger.setAttribute("data-state", "closed");
+    hamburgerIcon.src = "./assets/hamburger.png";
+    hamburger.classList.remove("rotate-180");
   }
 };
 
