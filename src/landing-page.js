@@ -28,7 +28,13 @@ hamburger.addEventListener("click", () => {
     const isOpen = hamburger.getAttribute("data-state") === "open";
     menu.classList.toggle("hidden");
     btnMenu.classList.toggle("hidden");
-    navbar.classList.add("bg-[#202020]");
+
+    // Ensure navbar always has a background when menu is open
+    if (!isOpen) {
+      navbar.classList.add("bg-[#202020]");
+    } else if (window.scrollY <= 100) {
+      navbar.classList.remove("bg-[#202020]");
+    }
 
     // Toggle between hamburger and closing icon
     hamburger.setAttribute("data-state", isOpen ? "closed" : "open");
@@ -36,11 +42,6 @@ hamburger.addEventListener("click", () => {
 
     // Add a rotation animation
     hamburger.classList.toggle("rotate-180");
-
-    // Remove background only if menu is closed and scroll is at the top
-    if (!isOpen && window.scrollY <= 100) {
-      navbar.classList.remove("bg-[#202020]");
-    }
   }
 });
 
@@ -76,6 +77,7 @@ const handleScroll = () => {
   const isMobile = window.innerWidth < 768;
   const isMenuOpen = hamburger.getAttribute("data-state") === "open";
 
+  // Ensure background is visible when menu is open or scroll > 100px
   if (window.scrollY > 100 || (isMobile && isMenuOpen)) {
     navbar.classList.add("fixed", "top-0", "left-0", "w-full", "z-50", "bg-[#202020]");
     navbar.classList.remove("relative");
@@ -87,7 +89,6 @@ const handleScroll = () => {
 
 // Add a scroll event listener
 window.addEventListener("scroll", handleScroll);
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
