@@ -2,10 +2,27 @@ const hamburger = document.getElementById("hamburger");
 const menu = document.querySelector("#menu");
 const menu2 = document.querySelector("#menu2");
 
+// Toggle menu visibility for mobile view
 hamburger.addEventListener("click", () => {
-  menu.classList.toggle("hidden"); // Toggle the 'hidden' class
-  menu2.classList.toggle("hidden"); // Toggle the 'hidden' class
+  if (window.innerWidth < 768) {
+    menu.classList.toggle("hidden");
+    menu2.classList.toggle("hidden");
+  }
 });
+
+// Ensure the menu is visible for larger screens
+const handleResize = () => {
+  if (window.innerWidth >= 640) {
+    menu.classList.remove("hidden");
+    menu2.classList.remove("hidden");
+  }
+};
+
+// Add a resize event listener to handle dynamic resizing
+window.addEventListener("resize", handleResize);
+
+// Initial check in case the page loads in a wide screen
+handleResize();
 
 document.addEventListener("DOMContentLoaded", () => {
   // Adjust animation duration for the USDT container

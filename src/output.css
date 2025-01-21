@@ -1379,6 +1379,10 @@ video {
   padding-bottom: 15rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1603,8 +1607,24 @@ video {
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .max-md\:w-full {
     width: 100%;
+  }
+
+  .max-md\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .max-md\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
+  .max-md\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 }
 
