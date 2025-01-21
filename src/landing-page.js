@@ -16,24 +16,31 @@ const initializeMenu = () => {
     hamburger.classList.remove("rotate-180");
 
     // Reset navbar background if any
-    navbar.classList.remove("bg-[#202020]");
+    if (window.scrollY <= 100) {
+      navbar.classList.remove("bg-[#202020]");
+    }
   }
 };
 
 // Toggle menu and handle hamburger icon
 hamburger.addEventListener("click", () => {
   if (window.innerWidth < 768) {
+    const isOpen = hamburger.getAttribute("data-state") === "open";
     menu.classList.toggle("hidden");
     btnMenu.classList.toggle("hidden");
-    navbar.classList.toggle("bg-[#202020]");
+    navbar.classList.add("bg-[#202020]");
 
     // Toggle between hamburger and closing icon
-    const isOpen = hamburger.getAttribute("data-state") === "open";
     hamburger.setAttribute("data-state", isOpen ? "closed" : "open");
     hamburgerIcon.src = isOpen ? "./assets/hamburger.png" : "./assets/closing-icon.png";
 
     // Add a rotation animation
     hamburger.classList.toggle("rotate-180");
+
+    // Remove background only if menu is closed and scroll is at the top
+    if (!isOpen && window.scrollY <= 100) {
+      navbar.classList.remove("bg-[#202020]");
+    }
   }
 });
 
@@ -66,7 +73,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // Add scroll effect to make navbar fixed after scrolling 100px
 const handleScroll = () => {
-  if (window.scrollY > 100) {
+  const isMobile = window.innerWidth < 768;
+  const isMenuOpen = hamburger.getAttribute("data-state") === "open";
+
+  if (window.scrollY > 100 || (isMobile && isMenuOpen)) {
     navbar.classList.add("fixed", "top-0", "left-0", "w-full", "z-50", "bg-[#202020]");
     navbar.classList.remove("relative");
   } else {
@@ -77,6 +87,7 @@ const handleScroll = () => {
 
 // Add a scroll event listener
 window.addEventListener("scroll", handleScroll);
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
