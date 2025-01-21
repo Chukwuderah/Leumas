@@ -1616,6 +1616,12 @@ video {
   color: rgb(232 195 198 / var(--tw-text-opacity, 1));
 }
 
+@media not all and (min-width: 1024px) {
+  .max-lg\:flex-row {
+    flex-direction: row;
+  }
+}
+
 @media not all and (min-width: 768px) {
   .max-md\:mb-6 {
     margin-bottom: 1.5rem;
@@ -1623,6 +1629,10 @@ video {
 
   .max-md\:w-full {
     width: 100%;
+  }
+
+  .max-md\:flex-row {
+    flex-direction: row;
   }
 
   .max-md\:pb-6 {
@@ -1698,5 +1708,11 @@ video {
 
   .md\:text-\[4em\] {
     font-size: 4em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
