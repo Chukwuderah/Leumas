@@ -18,9 +18,9 @@
             id="top"
           />
         </div>
-        <button type="button" id="hamburger" class="md:hidden">
-          <img src="./assets/hamburger.png" alt="hamburger menu" class="w-6 h-5">
-        </button>
+        <button type="button" id="hamburger" data-state="closed" class="md:hidden transition-transform duration-300">
+          <img src="./assets/hamburger.png" alt="hamburger menu" class="w-6 h-5" id="hamburger-icon">
+        </button>        
       </div>
       <!-- <div id="menu" class="transition-all duration-300 flex flex-col md:flex-row flex-nowrap justify-evenly items-center h-full gap-16 text-white"> -->
       <ul id="menu" class="flex flex-col md:flex-row justify-evenly items-center h-full gap-6 text-white max-md:pb-6">
