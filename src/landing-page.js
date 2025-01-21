@@ -1,6 +1,6 @@
 const navbar = document.querySelector("nav");
-const hamburger = document.getElementById("hamburger");
-const hamburgerIcon = document.getElementById("hamburger-icon");
+const hamburger = document.querySelector("#hamburger");
+const hamburgerIcon = document.querySelector("#hamburger-icon");
 const menu = document.querySelector("#menu");
 const btnMenu = document.querySelector("#btnMenu");
 
