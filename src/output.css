@@ -1782,6 +1782,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:top-0 {
+    top: 0px;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1792,6 +1796,10 @@ video {
 
   .lg\:mb-40 {
     margin-bottom: 10rem;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:h-\[100vh\] {
@@ -1842,11 +1850,23 @@ video {
     align-items: flex-end;
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
 
   .lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
