@@ -652,6 +652,10 @@ video {
   margin: 2rem;
 }
 
+.m-20 {
+  margin: 5rem;
+}
+
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -829,6 +833,10 @@ video {
   height: 100vh;
 }
 
+.h-\[20rem\] {
+  height: 20rem;
+}
+
 .min-h-\[70vh\] {
   min-height: 70vh;
 }
@@ -908,6 +916,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
 }
 
 .min-w-full {
@@ -1733,6 +1745,14 @@ video {
 @media (min-width: 1024px) {
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[20rem\] {
+    width: 20rem;
+  }
+
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .lg\:flex-row {
