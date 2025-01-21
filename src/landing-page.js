@@ -4,6 +4,23 @@ const hamburgerIcon = document.querySelector("#hamburger-icon");
 const menu = document.querySelector("#menu");
 const btnMenu = document.querySelector("#btnMenu");
 
+// Ensure the menu is hidden and hamburger icon is reset on page load
+const initializeMenu = () => {
+  if (window.innerWidth < 768) {
+    menu.classList.add("hidden");
+    btnMenu.classList.add("hidden");
+
+    // Reset the hamburger icon to default state
+    hamburger.setAttribute("data-state", "closed");
+    hamburgerIcon.src = "./assets/hamburger.png";
+    hamburger.classList.remove("rotate-180");
+
+    // Reset navbar background if any
+    navbar.classList.remove("bg-[#202020]");
+  }
+};
+
+// Toggle menu and handle hamburger icon
 hamburger.addEventListener("click", () => {
   if (window.innerWidth < 768) {
     menu.classList.toggle("hidden");
@@ -13,7 +30,7 @@ hamburger.addEventListener("click", () => {
     // Toggle between hamburger and closing icon
     const isOpen = hamburger.getAttribute("data-state") === "open";
     hamburger.setAttribute("data-state", isOpen ? "closed" : "open");
-    hamburgerIcon.src = isOpen ? "./assets/closing-icon.png" : "./assets/hamburger.png";
+    hamburgerIcon.src = isOpen ? "./assets/hamburger.png" : "./assets/closing-icon.png";
 
     // Add a rotation animation
     hamburger.classList.toggle("rotate-180");
@@ -30,28 +47,37 @@ const handleResize = () => {
     hamburger.setAttribute("data-state", "closed");
     hamburgerIcon.src = "./assets/hamburger.png";
     hamburger.classList.remove("rotate-180");
+
+    // Remove navbar background color
+    navbar.classList.remove("bg-[#202020]");
+  } else {
+    initializeMenu(); // Reinitialize menu for smaller screens
   }
 };
 
 // Add a resize event listener to handle dynamic resizing
 window.addEventListener("resize", handleResize);
 
-// Initial check in case the page loads in a wide screen
-handleResize();
+// Initial setup when the page loads
+window.addEventListener("DOMContentLoaded", () => {
+  initializeMenu();
+  handleResize();
+});
 
 // Add scroll effect to make navbar fixed after scrolling 100px
 const handleScroll = () => {
-    if (window.scrollY > 100) {
-      navbar.classList.add("fixed", "top-0", "left-0", "w-full", "z-50", "bg-[#202020]");
-      navbar.classList.remove("relative");
-    } else {
-      navbar.classList.remove("fixed", "top-0", "left-0", "w-full", "z-50", "bg-[#202020]");
-      navbar.classList.add("relative");
-    }
-  };
-  
-  // Add a scroll event listener
-  window.addEventListener("scroll", handleScroll);
+  if (window.scrollY > 100) {
+    navbar.classList.add("fixed", "top-0", "left-0", "w-full", "z-50", "bg-[#202020]");
+    navbar.classList.remove("relative");
+  } else {
+    navbar.classList.remove("fixed", "top-0", "left-0", "w-full", "z-50", "bg-[#202020]");
+    navbar.classList.add("relative");
+  }
+};
+
+// Add a scroll event listener
+window.addEventListener("scroll", handleScroll);
+
 
 document.addEventListener("DOMContentLoaded", () => {
   // Adjust animation duration for the USDT container
