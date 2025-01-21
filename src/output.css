@@ -1248,6 +1248,10 @@ video {
   padding: 15px;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1758,6 +1762,10 @@ video {
 
   .md\:p-\[50px\] {
     padding: 50px;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 
   .md\:px-14 {
