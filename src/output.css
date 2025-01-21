@@ -1029,6 +1029,14 @@ video {
   gap: 70px;
 }
 
+.gap-\[50px\] {
+  gap: 50px;
+}
+
+.gap-\[40px\] {
+  gap: 40px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1368,6 +1376,11 @@ video {
   padding-bottom: 30px;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1659,6 +1672,10 @@ video {
 
   .max-md\:w-full {
     width: 100%;
+  }
+
+  .max-md\:gap-\[70px\] {
+    gap: 70px;
   }
 
   .max-md\:pb-6 {
